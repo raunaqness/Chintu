@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 rss_theverge = feedparser.parse("http://www.theverge.com/rss/index.xml.rss")
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
 
 	sites = list_of_sites() # List of websites
