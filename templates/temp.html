@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h1> <a href = {{link}}>
+      Title : {{ title }}</a></h1>
+
+      <h2>No of articles : {{no_of_links}}</h2>
+
+      <ol>
+
+      {% for key, value in links.iteritems() %}
+
+      <li><a href = {{value}}>{{key}}</a>
+
+      {% endfor %}
+      </ol>
+      
+   </body>
+</html>
