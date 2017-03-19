@@ -1,20 +1,21 @@
 <!doctype html>
 <html>
    <body>
-   
-      <h1> <a href = {{link}}>
-      Title : {{ title }}</a></h1>
 
-      <h2>No of articles : {{no_of_links}}</h2>
+      {% for content in contents %}
 
-      <ol>
+         <h1> Title : {{content['name']}} </h1>
+         <h3> <a href = {{content['link']}}> {{content['link']}} </a> </h3>
 
-      {% for key, value in links.iteritems() %}
+         <ol>
+         {% for key, value in (content['links']).iteritems() %}
 
-      <li><a href = {{value}}>{{key}}</a>
+            <li> <a href = {{value}}> {{key}} </a> </li>
+
+         {% endfor %}
+         </ol>
 
       {% endfor %}
-      </ol>
       
    </body>
 </html>
