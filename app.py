@@ -42,8 +42,14 @@ def list_of_sites():
 	sites = []
 
 	sites.append("http://www.theverge.com/rss/index.xml.rss") #The Verge
+	sites.append("http://feeds.feedburner.com/Techcrunch") #TechCrunch
+	sites.append("https://www.wired.com/feed") #WIRED
 	sites.append("http://feeds.arstechnica.com/arstechnica/index/") #Ars Technica
 	sites.append("http://feeds.gawker.com/gizmodo/full") #Gizmodo
+	
+	
+
+	
 
 	return (sites)
 
